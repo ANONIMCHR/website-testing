@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christ Official</title>
+<meta name="description" content="Christ Official — independent developer. Desktop apps, web tools, dan project-project lainnya.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="galaxy-canvas"></canvas>
+  <div class="nebula-glow"></div>
+  <div class="vignette"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-tagline" id="brand-tagline-wrap">
+        <span id="brand-tagline"></span>
+      </p>
+      <h1 class="hero-brand" id="brand-name"></h1>
+      <div class="typewriter">
+        <span id="typewriter-text"></span><span class="cursor"></span>
+      </div>
+      <div class="scroll-hint">scroll buat lanjut</div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard">
+      <div class="leaderboard-head">
+        <div>
+          <p class="eyebrow"><span class="live-dot"></span>live</p>
+          <h2 id="lb-title">Panel Felix Tools</h2>
+        </div>
+        <span class="leaderboard-sub" id="lb-sub"></span>
+      </div>
+      <div class="lb-table">
+        <div class="lb-row lb-header">
+          <div>Nama</div>
+          <div>Role</div>
+          <div>Status</div>
+          <div>Sisa Waktu</div>
+        </div>
+        <div id="lb-body">
+          <div class="lb-empty">Memuat data…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="eyebrow">work</p>
+      <h2>Project-project gua</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- SOCIALS -->
+    <section id="contact">
+      <p class="eyebrow">connect</p>
+      <h2>Hubungin gua</h2>
+      <div class="social-row" id="social-row"></div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Christ Official
+    </footer>
+
+  </div>
+
+  <!-- PHOTO WIDGET -->
+  <div class="photo-widget" id="photo-widget">
+    <div class="photo-frame">
+      <div class="stack" id="photo-stack"></div>
+      <div class="heart" id="photo-heart">❤</div>
+    </div>
+    <div class="photo-dots" id="photo-dots"></div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/config.js"></script>
+  <script src="js/galaxy.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
